@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graph</class>
+ <widget class="QDialog" name="Graph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QCustomPlot" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>12</y>
+     <width>431</width>
+     <height>414</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_get_graph">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>436</y>
+     <width>411</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Построить график</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_exit">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>470</y>
+     <width>191</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Закрыть окно</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_clear_graph">
+   <property name="geometry">
+    <rect>
+     <x>238</x>
+     <y>510</y>
+     <width>181</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Удалить график</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>510</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>480</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>480</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>From</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>510</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>From</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_set_x_max">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>480</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-1000000</number>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+   <property name="singleStep">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_set_y_max">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>510</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-1000000</number>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>480</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>To</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>510</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>To</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_set_x_min">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>480</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-1000000</number>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_set_y_min">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>510</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-1000000</number>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
